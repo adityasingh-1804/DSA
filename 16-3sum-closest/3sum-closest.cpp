@@ -14,11 +14,9 @@ public:
 
             while (left < right) {
                 int sum = nums[i] + nums[left] + nums[right];
-
                 if (abs(sum - target) < abs(closestSum - target)) {
                     closestSum = sum;
                 }
-
                 if (sum == target) {
                     return sum;
                 }
